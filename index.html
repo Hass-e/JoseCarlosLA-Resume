@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f177911c8e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio-section">Portafolio</a></li>
+                    <li><a href="#certification-section">Certifications</a></li>
+                    <li><a href="#resume-section">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Jose</span><br>Carlos Lozano</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT SECTION -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="about-parr">I’m a self-taught person in the developing/programing world with a useful level of knowledge in JavaScript, HTML and CSS languages all together.<br> <br>
+                        I’ve been mainly focusing my attention to JavaScript because of how easy one can achieve tasks and the huge internet community there is that helps us find useful information to keep improving and to fix any problematic situation we might face, having HTML and CSS as my structure tools. <br>
+                        I discovered this big interest in the developing field when I encounter myself trying to find a way to adapt an old process we had in my current job, because it lacked of structure and sustainability. <br>I saw an opportunity to create something useful from scratch. So, I initiated doing my research and started building an interactive data base with VBA/Excel for my coworkers and I,
+                        to keep track of our daily workload. <br> It helps us coordinate what to focus everyday and to visualize issues that need to be resolved. <br>
+                        It made me realize I really want to keep on doing this kind of work and now I find myself learning and digging more and more in this field every day. <br><br>
+                        Though I love working with the front-end my objective is to have the skills of a full stack developer.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')"><b>Skills</b></p>
+                            <p class="tab-links" onclick="openTab('education')"><b>Education</b></p>
+                            <p class="tab-links" onclick="openTab('experience')"><b>Experience</b></p>
+                            <p class="tab-links" onclick="openTab('certifications')"><b>Certifications</b></p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                                <li><span>Languages</span><br>HTML <br>CSS <br> JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Electronic engineer</span><br>Universidad Autónoma de Baja California (UABC) <br> Ensenada, Baja California, México.</li>
+                                <li><span>Electronic technician</span><br>Centro De Bachillerato Tecnológico, Industrial y de Servicios #41 <br> Ensenada, Baja California, México.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Online Store Proyect</span><br>Intractive skateboarding webpage </li>
+                                <li><span>Online Blog Proyect</span><br>Website Blog</li>
+                                <li><span>Online Personal Portfolio</span><br>To acquire the Responsive Web Design certification</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><span>FreeCodeCamp - 2023</span><br>Responsive Web Design</li>
+                                <li><span>FreeCodeCamp - 2023</span><br>JavaScript Algorithms and Data Structures</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EXPERIENCE -->
+    <div id="portfolio-section">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="portfolio-list">
+                <div class="proyects">
+                    <img src="img/online-store.png">
+                    <div class="layer">
+                        <h3>Online Store</h3>
+                        <p>The user is able to easily visualize any product, as well as to filter and add items to a basket for a future transaction.</p>
+                        <a href="https://hass-e.github.io/OnlineStore.github.io/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="proyects">
+                    <img src="img/online-blog.png">
+                    <div class="layer">
+                        <h3>Online Blog</h3>
+                        <p>Website to read and learn skateboarding information.</p>
+                        <a href="https://hass-e.github.io/OnlineBlog/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="proyects">
+                    <img src="img/online-portfolio.png">
+                    <div class="layer">
+                        <h3>Online Personal Portfolio</h3>
+                        <p>Project to finish the Responsive Web Design certification from FreeCodeCamp</p>
+                        <a href="https://hass-e.github.io/FirstPortfolio/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CERTIFICATIONS -->
+    <div id="certification-section">
+        <div class="container">
+            <h1 class="sub-title">Certifications</h1>
+            <div class="certification-list">
+                <div class="cert-box">
+                    <i class="fa-solid fa-object-group"></i>
+                    <h2>Responsive Web Design</h2>
+                    <p>FreeCodeCamp - 2023</p>
+                    <a href="https://www.freecodecamp.org/certification/JoseCarlosLozano/responsive-web-design" target="_blank" class="btn">Take me</a>
+                </div>
+                <div class="cert-box">
+                    <i class="fa-brands fa-square-js"></i>
+                    <h2>JavaScript Algorithms and Data Structures</h2>
+                    <p>FreeCodeCamp - 2023</p>
+                    <a href="https://www.freecodecamp.org/certification/JoseCarlosLozano/javascript-algorithms-and-data-structures" target="_blank" class="btn">Take me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RESUME -->
+    <div id="resume-section">
+        <div class="container">
+            <h1 class="sub-title">Resume</h1>
+            <div class="resume-list">
+                <div>
+                    <i class="fa-solid fa-file-word"></i>
+                    <h2>MS Word version</h2>
+                        <a href="docs/Resume-JCLA_2023.docx" download><i class="fa-solid fa-download"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <h2>PDF version</h2>
+                        <a href="docs/Resume-JCLA_2023.pdf" download><i class="fa-solid fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+            <a href="#" class="btn">Back to top</a>
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> jose.lozano29@uabc.edu.mx</p>
+                    <p><i class="fa-solid fa-phone"></i> +52 (646) 171-7688</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jose-carlos-lozano-acevedo-46618518b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Hass-e" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/notsomuchcheese/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Jose Carlos Lozano</p>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
