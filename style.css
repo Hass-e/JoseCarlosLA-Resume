@@ -175,7 +175,6 @@ nav ul li a:hover::after{
     float: left;
  }
  #sub-right {
-    float: right;
     text-align: start;
  }
 
