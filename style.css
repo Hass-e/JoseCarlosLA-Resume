@@ -171,13 +171,12 @@ nav ul li a:hover::after{
     display: block;
 }
 
-#sub-left {
-    float: left;
- }
- 
- #sub-right {
-    float: right;
- } 
+.boxes-in{
+    display: flex;
+    flex-flow: row wrap; /* ADDED to make content wrap */
+    justify-content: space-evenly;
+    justify-content: center;
+}
 
 /* CERTIFIATIONS */
 #certification-section{
