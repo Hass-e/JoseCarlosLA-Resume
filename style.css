@@ -171,12 +171,13 @@ nav ul li a:hover::after{
     display: block;
 }
 
-#sub-left {
+/* #sub-left {
     float: left;
  }
  #sub-right {
+    float: right;
     text-align: start;
- }
+ } */
 
 /* CERTIFIATIONS */
 #certification-section{
