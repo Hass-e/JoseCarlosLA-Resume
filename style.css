@@ -178,9 +178,6 @@ nav ul li a:hover::after{
     float: right;
     text-align: start;
  }
- .clear-both {
-    clear: both;
- }
 
 /* CERTIFIATIONS */
 #certification-section{
