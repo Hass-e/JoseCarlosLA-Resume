@@ -173,9 +173,17 @@ nav ul li a:hover::after{
 
 .boxes-in{
     display: flex;
-    flex-flow: row wrap; /* ADDED to make content wrap */
+    flex-flow: row wrap;
     justify-content: space-evenly;
     justify-content: center;
+}
+
+.left-box{
+    float: left;
+}
+
+.right-box{
+    float: right;
 }
 
 /* CERTIFIATIONS */
