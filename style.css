@@ -174,11 +174,11 @@ nav ul li a:hover::after{
 #sub-left {
     float: left;
  }
- /*
+ 
  #sub-right {
-    float: right;
+    /* float: right; */
     text-align: start;
- } */
+ } 
 
 /* CERTIFIATIONS */
 #certification-section{
