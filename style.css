@@ -171,6 +171,16 @@ nav ul li a:hover::after{
     display: block;
 }
 
+#sub-left {
+    float: left;
+ }
+ #sub-right {
+    float: right;
+ }
+ .clear-both {
+    clear: both;
+ }
+
 /* CERTIFIATIONS */
 #certification-section{
     padding: 30px 0;
