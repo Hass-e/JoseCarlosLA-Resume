@@ -176,8 +176,7 @@ nav ul li a:hover::after{
  }
  
  #sub-right {
-    /* float: right; */
-    text-align: start;
+    float: right;
  } 
 
 /* CERTIFIATIONS */
