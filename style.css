@@ -173,11 +173,11 @@ nav ul li a:hover::after{
 
 .left-box{
     float: left;
+    padding-right: 80px;
 }
 
 .right-box{
     float: right;
-    padding-right: 79px;
 }
 
 /* CERTIFIATIONS */
