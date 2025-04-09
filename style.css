@@ -184,6 +184,7 @@ nav ul li a:hover::after{
 
 .right-box{
     float: right;
+    padding-right: 50%;
 }
 
 /* CERTIFIATIONS */
