@@ -168,7 +168,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents.active-tab{
-    display: block;
+    display: flex;
 }
 
 .left-box{
@@ -177,7 +177,7 @@ nav ul li a:hover::after{
 
 .right-box{
     float: right;
-    padding-right: 64.5%;
+    padding-right: 79px;
 }
 
 /* CERTIFIATIONS */
