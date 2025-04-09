@@ -171,13 +171,6 @@ nav ul li a:hover::after{
     display: block;
 }
 
-.boxes-in{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    justify-content: center;
-}
-
 .left-box{
     float: left;
 }
