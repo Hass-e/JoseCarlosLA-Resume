@@ -172,15 +172,16 @@ nav ul li a:hover::after{
 
 .tab-contents.active-tab{
     display: flex;
+    justify-content: flex-start;
+    border-style: solid;
+    border-color: #046d24;
+    border-radius: 20px;
+    padding: 10px 20px;;
 }
 
-.left-box{
+.boxes-inside{
     float: left;
     padding-right: 80px;
-}
-
-.right-box{
-    float: right;
 }
 
 /* CERTIFIATIONS */
