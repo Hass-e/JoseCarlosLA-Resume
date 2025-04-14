@@ -165,12 +165,13 @@ nav ul li a:hover::after{
 
 .tab-contents{
     display: none;
-
+    border-color: var(--cls-grey);
+    border-width: 3px;
+    border-radius: 25%;
 }
 
 .tab-contents.active-tab{
     display: flex;
-    border-color: #006300;
 }
 
 .left-box{
