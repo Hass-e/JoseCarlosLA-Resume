@@ -168,17 +168,30 @@ nav ul li a:hover::after{
 }
 
 .tab-contents.active-tab{
-    display: flex;
-    justify-content: flex-start;
-    border-style: solid;
-    border-color: #046d24;
-    border-radius: 20px;
-    padding: 10px 20px;;
+  display: flex;
+  border-style: solid;
+  border-color: #046d24;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;       /* centra horizontalmente si hay espacio */
+  gap: 1rem;                     /* espacio entre columnas */
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-.boxes-inside{
-    float: left;
-    padding-right: 80px;
+.boxes-inside {
+  flex: 10%;           
+  min-width: 180px;             /* evita que se haga demasiado pequeña */
+  max-width: 100%;
+  background-color: var(--clr-back);    /* opcional: color de fondo */
+  border-radius: 8px;
+  box-sizing: content-box;
+}
+
+@media (max-width: 600px) {
+  .boxes-inside {
+    flex: 1 1 100%;             /* cada caja toma todo el ancho */
+  }
 }
 
 /* CERTIFIATIONS */
@@ -336,7 +349,7 @@ nav ul li a:hover::after{
 
 .btn{
     display: block;
-    margin: 50px auto;
+    margin: 60px auto 20px;
     width: fit-content;
     border: 1px solid var(--clr-main);
     padding: 14px 50px;
@@ -346,9 +359,12 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 
+.btn.middle-box-btn{
+    margin: 29px auto 20px;
+}
+
 .btn:hover{
     background: var(--clr-main);
-
 }
 
 /* CONTACT */
