@@ -150,7 +150,7 @@ nav ul li a:hover::after{
 }
 
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li{
@@ -500,6 +500,7 @@ nav .fa-solid{
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
+        margin-right: 70%;
     }
     .tab-titles{
         display: block;
@@ -516,6 +517,9 @@ nav .fa-solid{
         left: 0;
         bottom: 0;
         transition: 0.5s;
+    }
+    .tab-links.active-link::after{
+        width: 100%;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
