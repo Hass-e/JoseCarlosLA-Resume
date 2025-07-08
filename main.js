@@ -26,18 +26,17 @@ function closeMenu(){
 }
 
 // CODE TO SUMIT TO GOOGLE SHEETS
-const scriptURL = 'https://script.google.com/macros/s/AKfycbx2yKKWn7RzKuIb3Rxapmxuj6JAelu_CLpi3HSwlkhe2B50phNmNkm-uaqcWJGra9GvAA/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwYcZ78o_xfEsYJPtierzWxJivSakTf3Vx9rIK3DwLhagkRKEP0zc8iwYqk815NpgGjnA/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
   
 form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-        msg.innerHTML = "Message sent successfully!"
-        setTimeout(function(){
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)}).then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
             msg.innerHTML = ""
-        },5000)
+        },3000)
         form.reset()
     })
     .catch(error => console.error('Error!', error.message))
