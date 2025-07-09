@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f177911c8e.js" crossorigin="anonymous"></script>
 </head>
+<button id="floatingMenuBtn" style="display: none;">☰ Menu</button>
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <img src="img/logo.png" class="logo">
                 <ul id="sideMenu">
+                    <i id="closeBtn" class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio-section">Portafolio</a></li>
                     <li><a href="#certification-section">Certifications</a></li>
                     <li><a href="#resume-section">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                <!-- <i id="closeHmrgBtn" class="fa-solid fa-bars" onclick="openMenu()"></i> -->
             </nav>
             <div class="header-text">
                 <p>Software QA Engineer</p>

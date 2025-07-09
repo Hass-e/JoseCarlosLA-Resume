@@ -88,6 +88,36 @@ nav ul li a:hover::after{
     color: var(--clr-main);
 }
 
+/* CLASES TO MODIFY WITH JS */
+#floatingMenuBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.menu-open {
+    right: 0;
+    background: var(--cls-mainclear);
+    z-index: 2;
+    position: fixed;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    top: 0;
+    width: 160px;
+    height: 35vh;
+    padding-top: 15px;
+    transition: right 0.5s;
+}
+
 /* ABOUT SECTION */
 #about{
     padding: 80px 0;
@@ -441,11 +471,21 @@ form .btn2{
     margin-top: 30px;
 }
 
-/* CSS FOR SMALL SCREEN */
 nav .fa-solid{
     display: none;
 }
 
+#closeBtn {
+    font-size: large;
+    margin-left: 100px;
+    padding: 5px 20px 3px 20px;
+}
+
+#closeHmrgBtn {
+    display: none;
+}
+
+/* CSS FOR SMALL SCREEN */
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(img/phone-background.jpg);
@@ -457,11 +497,23 @@ nav .fa-solid{
     .header-text h1{
         font-size: 30px;
     }
+
+    #closeBtn {
+    font-size: large;
+    margin-left: 80px;
+    padding: 5px 20px 3px 20px;
+    }
+
+    /*#closeHmrgBtn {
+        display: block;
+    }*/
+
     nav .fa-solid{
         display: block;
         font-size: 25px;
     }
-    nav ul{
+
+    /*nav ul{                                           
         background: var(--cls-mainclear);
         z-index: 2;
         position: fixed;
@@ -474,6 +526,21 @@ nav .fa-solid{
         padding-top: 50px;
         transition: right 0.5s;
     }
+
+    nav ul {
+        right: 0;
+        background: var(--cls-mainclear);
+        z-index: 2;
+        position: fixed;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        top: 0;
+        width: 160px;
+        height: 35vh;
+        padding-top: 15px;
+        transition: right 0.5s;
+    }*/
+    
     nav ul li{
         display: block;
         margin: 25px;

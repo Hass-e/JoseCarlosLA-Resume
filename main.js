@@ -1,3 +1,10 @@
+if (window.innerWidth < 601) {
+    
+    // tu código aquí
+}
+
+
+
 // CODE TO HIDE AND UNHIDE ITEMS IN ABOUT
 var tabLinks = document.getElementsByClassName("tab-links");
 var tabContents = document.getElementsByClassName("tab-contents");
@@ -14,15 +21,45 @@ function openTab(tabName){
     document.getElementById(tabName).classList.add("active-tab");
 }
 
-// CODE TO VISUALIZE RIGHT MENU IN SMALL DEVICES
-var sideMenu = document.getElementById("sideMenu");
+//CODE FOR THE POP UP MENU
+const header = document.getElementById('header');
+var sideMenu = document.getElementById('sideMenu');
+const floatingMenuBtn = document.getElementById('floatingMenuBtn');
+const closeMenuBtn = document.getElementById('closeBtn');
 
+window.addEventListener('scroll', () => {
+  const headerBottom = header.getBoundingClientRect().bottom;
+  if (headerBottom < 1) {
+        if(isMenuOpen()) {
+            floatingMenuBtn.style.display = 'none';
+        } else {
+            floatingMenuBtn.style.display = 'block';
+            closeMenuBtn.style.display = "block";
+        }
+    } else {
+        floatingMenuBtn.style.display = 'none';
+        sideMenu.classList.remove("menu-open");
+        closeMenuBtn.style.display = "none";
+  }
+});
+
+floatingMenuBtn.addEventListener('click', () => {
+    openMenu();
+})
+
+function isMenuOpen() {
+    return sideMenu.classList.contains("menu-open");
+};
+
+// CODE TO VISUALIZE RIGHT MENU
 function openMenu(){
-    sideMenu.style.right = "0";
+    floatingMenuBtn.style.display = "none";
+    sideMenu.classList.add("menu-open");
 }
 
 function closeMenu(){
-    sideMenu.style.right = "-200px";
+    floatingMenuBtn.style.display = "block";
+    sideMenu.classList.remove("menu-open");
 }
 
 // CODE TO SUMIT TO GOOGLE SHEETS
