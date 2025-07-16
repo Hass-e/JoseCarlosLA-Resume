@@ -1,10 +1,3 @@
-if (window.innerWidth < 601) {
-    
-    // tu código aquí
-}
-
-
-
 // CODE TO HIDE AND UNHIDE ITEMS IN ABOUT
 var tabLinks = document.getElementsByClassName("tab-links");
 var tabContents = document.getElementsByClassName("tab-contents");
