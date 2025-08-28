@@ -111,11 +111,12 @@ nav ul li a:hover::after{
     position: fixed;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    top: 0;
+    top: 10px;
     width: 160px;
-    height: 35vh;
+    height: min-content;
     padding-top: 15px;
     transition: right 0.5s;
+    padding-bottom: 22px;
 }
 
 /* ABOUT SECTION */
